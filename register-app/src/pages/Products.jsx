@@ -7,8 +7,8 @@ const ProductModal = ({ isOpen, onClose, product = null }) => {
         name: product?.name || '',
         category: product?.category || '',
         description: product?.description || '',
-        stock: product?.stock || 0,
-        price: product?.price || 0, // Inferred requirement
+        stock: product?.stock || '',
+        price: product?.price || '', // Inferred requirement
         type: product?.type || '' // User mentioned "Type" for filtering
     });
     const [loading, setLoading] = useState(false);
